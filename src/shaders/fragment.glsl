@@ -24,5 +24,5 @@ float noise(vec3 x)
 void main()
 {
     vec2 R = u_resolution.xy;
-    color = vec4(noise(vec3(R*8./u_time, .1*u_time)));
+    color = vec4(noise(vec3(R*8./u_time, .1*R)));
 }
