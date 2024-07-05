@@ -1,9 +1,9 @@
 #version 330
 
 in vec2 position;
-out vec2 fragCoord;
+out vec2 fragCoords;
 
 void main() {
-    fragCoord = position;
     gl_Position = vec4(position, 0.0, 1.0);
+    fragCoords = position;
 }

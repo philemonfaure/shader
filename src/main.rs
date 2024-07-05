@@ -43,8 +43,9 @@ fn main() {
         let mut target = display.draw();
         target.clear_color(0.0, 0.0, 0.0, 1.0);
         target.draw(&vertex_buffer, &index_buffer, &program, &uniform! {
-            u_time: elapsed_seconds,
-            u_resolution: [width as f32, height as f32]
+            time: elapsed_seconds,
+            resolution: [width as f32, height as f32],
+            camera_position: [ 0.0f32 , 0.0f32, -2.0f32]
         }, &Default::default()).unwrap();
         target.finish().unwrap();
 
