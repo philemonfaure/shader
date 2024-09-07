@@ -21,7 +21,8 @@ float mandelbrot(vec2 uv)
     return 0.0;
 }
 
-void main() {
+void main()
+{
     vec2 uv = vec2(frag_coords.x * (resolution.x/resolution.y), frag_coords.y);
     vec3 col = vec3(0.0);
 
